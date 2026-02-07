@@ -23,6 +23,90 @@
 
 <div id="clock">--:--:--</div>
 
+  <hr>
+
+<h2>DIGITAL CLOCK FEATURES</h2>
+
+<h3>BUTTON FUNCTION</h3>
+
+<b>B1 (SET Button)</b>
+<ul>
+  <li>Single press → Enter set mode / Increment Hour / Minute / Date / Month</li>
+  <li>Long press → Move to next field / Last long press saves Time and Date to RTC and starts clock</li>
+</ul>
+
+<b>B2 (BRIGHT Button)</b>
+<ul>
+  <li>Single press → Change brightness (5 levels)</li>
+  <li>Long press → Clock RUN / PAUSE toggle</li>
+</ul>
+
+<h3>TIME & DATE SET MODE</h3>
+<ul>
+  <li>SET mode: Digit Red colour</li>
+  <li>Selected field: Yellow colour</li>
+  <li>Colon steady ON (not blinking)</li>
+</ul>
+
+<h3>AUTO COLOUR CHANGING DISPLAY</h3>
+<ul>
+  <li>Running mode: Colour auto change</li>
+  <li>Total 60 colours</li>
+  <li>If you change the time, colour may change in code</li>
+</ul>
+
+<h3>SMART BRIGHTNESS SYSTEM</h3>
+<ul>
+  <li>Auto Brightness (RTC time):</li>
+  <ul>
+    <li>6 a.m – 6 p.m → Day brightness 50</li>
+    <li>6 p.m – 6 a.m → Night brightness 25</li>
+  </ul>
+  <li>Manual Brightness Override: Press Brightness button → Auto brightness off</li>
+</ul>
+
+<h3>AUTO DATE DISPLAY</h3>
+<ul>
+  <li>Normal time: 6 sec</li>
+  <li>Date display: 2 sec</li>
+</ul>
+
+<h3>BUZZER FEEDBACK SYSTEM</h3>
+<ul>
+  <li>Power ON: Double beep</li>
+  <li>Button short press → High beep</li>
+  <li>Long press → Low beep</li>
+  <li>Per hour beep</li>
+</ul>
+
+<h3>RUN / PAUSE MODE</h3>
+<ul>
+  <li>Clock pause: Time freeze</li>
+  <li>Display White colour</li>
+  <li>RTC continues running in background</li>
+</ul>
+
+<p><i>
+If you want to make any changes, you will need to modify the code.
+Example: Colour, Time & Date display duration, Colon blink time, etc.
+</i></p>
+
+<h3>COMPONENT LIST</h3>
+<ul>
+  <li>Microcontroller: Arduino Nano (or similar)</li>
+  <li>RTC Module: PCF8563 (or similar)</li>
+  <li>Passive buzzer</li>
+  <li>WS2812B LED × 30</li>
+  <li>5V Power supply</li>
+  <li>Buttons × 2</li>
+</ul>
+
+<hr>
+
+<p><b>This clock is made by:</b> Sayan Tripathi<br>
+<b>Mobile:</b> 8388908229</p>
+
+
 <script>
   function updateClock() {
     const now = new Date();

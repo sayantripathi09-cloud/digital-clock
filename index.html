@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Digital Clock</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      text-align: center;
+      padding-top: 60px;
+    }
+    #clock {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Smart Digital Clock</h1>
+
+<div id="clock">--:--:--</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const h = String(now.getHours()).padStart(2,'0');
+    const m = String(now.getMinutes()).padStart(2,'0');
+    const s = String(now.getSeconds()).padStart(2,'0');
+    document.getElementById("clock").innerText = h + ":" + m + ":" + s;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+<p>Designed by: Sayan</p>
+
+</body>
+</html>
 
